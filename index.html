@@ -1,0 +1,455 @@
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <title>David Harbage</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="canonical" href="https://davidharbage.com/">
+    <meta property="og:site_name" content="David Harbage">
+    <meta property="og:title" content="The Resume of David Harbage">
+    <meta property="og:url" content="https://davidharbage.com/">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Home">
+    <meta itemprop="url" content="https://davidharbage.com/">
+    <meta name="description" content="David Harbage's personal website">
+    <style type="text/css">
+      @-ms-viewport{
+        width: device-width;
+      }
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      *:before,
+      *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 10px;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      body{
+        font-family: 'Open Sans', sans-serif;
+        text-rendering: optimizeLegibility;
+        font-size: 13px;
+        line-height: 1.6;
+        background: #eee;
+        margin: 0;
+      }
+      @media(max-width: 850px) {
+        body{
+          background: #fff;
+        }
+      }
+      .container{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 850px;
+        overflow: none;
+        background: white;
+        padding: 20px 40px 5px;
+        overflow: hidden;
+        box-shadow: 0 0 0 1px #d1d1d1,0 0 4px 1px #ccc;
+      }
+      @media(max-width: 850px) {
+        .container{
+          box-shadow: 0px 0px #fff;
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+      }
+      .row {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+      .container:before,.container:after,.row:before,.row:after {
+        content: " ";
+        display: table;
+      }
+      .container:after,.row:after {
+        clear: both;
+      }
+      .dotted-bottom{
+        border-bottom: 2px dotted #ddd;
+        padding: 12px 5px 14px;
+      }
+      h1{
+        float: left;
+        text-transform: uppercase;
+        font: 700 52px/52px 'Open Sans', sans-serif;
+        letter-spacing: -2px;
+        margin: 0 0 10px 0;
+      }
+      h2{
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 22px;
+        color: #bebebe;
+        margin: 0 0 10px;
+        letter-spacing: -1px;
+        line-height: 1.1;
+      }
+      h3{
+        font-weight: 700;
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: 2px;
+        color: #7f7f7f;
+        line-height: 1.1;
+      }
+      p,ul{
+        color: #7f7f7f;
+        margin: 0px;
+      }
+      ul{
+        padding-left: 0px;
+      }
+      li{
+        list-style: none;
+      }
+      li:before{
+        content:"• ";
+        font-size: 18px;
+        line-height: 19px;
+        vertical-align: top;
+      }
+      .header{
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+      .contact{
+        float: right;
+        color: #bfbfbf;
+        text-align: right;
+        padding-top: 5px;
+        line-height: 16px;
+      }
+      .contact p{
+        color: #bfbfbf;
+      }
+      .work-item{
+        padding: 0px 0px 10px;
+        position: relative;
+      }
+      .work-item:last-child{
+        padding: 0px;
+      }
+      .work-item h3{
+        color: black;
+      }
+      .work-item .date{
+        font-weight: 400;
+        position: absolute;
+        right: 0;
+        top: 0;
+        line-height: 14px;
+        color: #7f7f7f;
+      }
+      b{
+        font-weight: 600;
+      }
+      .footer{
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #bfbfbf;
+        padding: 10px 5px;
+      }
+      .left-col,.centerleft-col{
+        float: left;
+        width: 23%;
+      }
+      .centerright-col,.right-col{
+        float: left;
+        width: 26%;
+      }
+      .centerleft-col,.centerright-col,.right-col{
+        padding-left: 3%;
+        border-left: 2px dotted #ddd;
+      }
+      .leader-awards{
+        padding-top: 14px;
+      }
+      .leadership{
+        float: left;
+        width: 46%;
+      }
+      .awards{
+        float: left;
+        width: 54%;
+        padding-left: 3%;
+        border-left: 2px dotted #ddd;
+      }
+      .interests{
+        padding: 12px 5px 14px;
+      }
+      .interests ul{
+        padding-left: 5px;
+      }
+      .interests ul li{
+        float: left;
+        padding-right: 6px;
+      }
+      .interests ul li:first-child{
+        padding-left: 0px;
+      }
+      .interests ul li:last-child{
+        padding-right: 0px;
+      }
+      .interests ul li:before{
+        font-size: 22px;
+        line-height: 21px;
+      }
+      .interests ul li:first-child:before{
+        content: " ";
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main" class="container">
+      <div class="row header dotted-bottom">
+        <h1>David Harbage</h1>
+        <div class="contact">
+          <p>
+            david.harbage@gmail.com
+          </p>
+          <p>
+            https://davidharbage.com
+          </p>
+        </div>
+      </div>
+      <div class="row work dotted-bottom">
+        <h2>Work Experience</h2>
+        <div class="work-item col-md-12">
+          <h3>
+            WorthFM
+          </h3>
+          <div class="date">
+            2015-2016
+          </div>
+          <p>
+            VP Engineering
+          </p>
+        </div>
+	      <div class="work-item col-md-12">
+          <h3>
+            DailyWorth
+          </h3>
+          <div class="date">
+            2013-2016
+          </div>
+          <p>
+            Lead Developer
+          </p>
+        </div>
+        <div class="work-item col-md-12">
+          <h3>
+            The Music Connectome Project
+          </h3>
+          <div class="date">
+            2014-2015
+          </div>
+          <p>
+            Founder & CTO
+          </p>
+        </div>
+        <div class="work-item col-md-12">
+          <h3>
+            Saunter
+          </h3>
+          <div class="date">
+            2013-2014
+          </div>
+          <p>
+            Founder & CTO
+          </p>
+        </div>
+        <div class="work-item col-md-12">
+          <h3>
+            University of Pennsylvania Department of Mathematics
+          </h3>
+          <div class="date">
+            2009-2010
+          </div>
+          <p>
+            Research Associate
+          </p>
+        </div>
+      </div>
+      <div class="row edu-awards dotted-bottom">
+        <h2>
+          Education
+        </h2>
+        <div class="work-item">
+          <h3>
+            University of Pennsylvania, College of Arts and Sciences
+          </h3>
+          <div class="date">
+            2011
+          </div>
+          <p>
+            Bachelor of Arts (BA) in Mathematics
+          </p>
+        </div>
+      </div>
+      <div class="row accomplishments dotted-bottom">
+        <h2>
+          Accomplishments
+        </h2>
+        <ul>
+          <li>
+            Sold Saunter, The Music Connectome Project, and surrounding intellectual property in 2015
+          </li>
+          <li>
+            Built The Music Connectome Project, one of the largest music databases in the world
+          </li>
+          <li>
+            Launched <b>Saunter.it</b>, a data-driven music discovery platform integrating community reviews and streaming
+          </li>
+          <li>
+            Architected and led development of <b>Worth.FM</b>, an online investment platform
+          </li>
+          <li>
+            Directed and structured the mobile-first rebuild of <b>DailyWorth.com</b>
+          </li>
+	        <li>
+            Contributed to system that successfully defended against one of the largest DDoS attacks of all time
+          </li>
+          <li>
+            Completed eight graduate level mathematics courses at <b>University of Pennsylvania</b> with a 3.6 GPA
+          </li>
+          <li>
+            Contributed graph algorithm package to <b>Maple 12</b>
+          </li>
+        </ul>
+      </div>
+      <div class="row skills dotted-bottom">
+        <h2>
+          Competencies
+        </h2>
+        <ul>
+          <div class="left-col">
+            <li>
+              Ruby
+            </li>
+            <li>
+              Javascript
+            </li>
+            <li>
+              SQL
+            </li>
+          </div>
+          <div class="centerleft-col">
+	          <li>
+              Python
+            </li>
+            <li>
+              ReactJS
+            </li>
+            <li>
+              AJAX
+            </li>
+          </div>
+          <div class="centerright-col">
+            <li>
+              Ruby on Rails
+            </li>
+            <li>
+              HTML
+            </li>
+            <li>
+              CSS/SASS
+            </li>
+          </div>
+          <div class="right-col">
+            <li>
+              Linux
+            </li>
+            <li>
+              TDD
+            </li>
+            <li>
+              Bash
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="row leader-awards dotted-bottom">
+        <div class="leadership">
+          <h2>
+            Leadership
+          </h2>
+          <ul>
+            <li>
+              Founder, Saunter & The Music Connectome Project
+            </li>
+            <li>
+              Vice President Engineering, Worth.FM
+            </li>
+            <li>
+              Lead Developer, DailyWorth.com
+            </li>
+          </ul>
+        </div>
+        <div class="awards">
+          <h2>
+            Awards
+          </h2>
+          <ul>
+            <li>
+              Individual and team awards at American Regions Math League
+            </li>
+            <li>
+              Valedictorian, Oxford Hills Comprehensive High School
+            </li>
+            <li>
+              Top Scoring Soloist, Maine State Jazz Festival (saxophone)
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row interests">
+        <h2>
+          Interests
+        </h2>
+        <ul>
+          <li>
+            Digital Nomadism
+          </li>
+          <li>
+            Virtual Reality
+          </li>
+          <li>
+            Data Privacy & Security
+          </li>
+          <li>
+            Automation
+          </li>
+          <li>
+            Go
+          </li>
+          <li>
+            Juggling
+          </li>
+          <li>
+            Puzzles
+          </li>
+          <li>
+            Husbandry
+          </li>
+          <li>
+            Jazz
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
